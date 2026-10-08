@@ -1,4 +1,4 @@
-# LLM Ranking System - A+ Grade Edition
+# LLM Ranking System 
 
 A production-ready, interpretable machine learning system for ranking Large Language Model (LLM) outputs based on answer quality. Uses LightGBM regression with 10+ engineered features to predict human satisfaction scores and provide explainable predictions.
 
@@ -10,42 +10,7 @@ A production-ready, interpretable machine learning system for ranking Large Lang
 - **Category Prediction**: Automatically detects prompt domain (Business, Science, etc.)
 - **Interactive UI**: Gradio-based web interface with keyword highlighting
 - **Auto-Redirect**: One-click navigation to best model's official website
-- **Production Ready**: Modular code, comprehensive logging, error handling
-- **Documented**: Full API reference, architecture guide, ablation study
 
-## Project Structure
-
-```
-LLM_RANKING_SYSTEM/
-├── config.yaml                 # Configuration (paths, model params, inference settings)
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-│
-├── src/
-│   ├── config.py              # Configuration loader
-│   ├── data.py                # Data loading & validation (Pydantic)
-│   ├── features.py            # Feature engineering (10+ features)
-│   ├── inference.py           # Inference pipeline
-│   └── utils.py               # Logging, metrics, utilities
-│
-├── models/
-│   ├── lgbm_ranking_model.joblib      # Pre-trained ranking model
-│   ├── model_meta.joblib               # Feature metadata
-│   └── category_predictor.pkl          # Category classification model
-│
-├── data/
-│   ├── converted_long_dataset_with_category_mapped.csv  # Training data (CSV)
-│   ├── features_dataset.parquet                         # Engineered features (Parquet)
-│   └── category_predictor.pkl                           # Category classifier
-│
-├── notebooks/
-│   ├── Final_UI.ipynb                 # Gradio UI application
-│   └── Model_Analysis.ipynb           # Performance analysis & SHAP explanations
-│
-├── tests/                     # Unit & integration tests (Phase 2)
-├── logs/                      # Runtime logs
-└── docs/                      # Documentation (architecture, API, ablation study)
-```
 
 ## Quick Start
 
@@ -303,12 +268,6 @@ Solution: Falls back to "MISC" category automatically
 - Auto-redirect to best model URLs
 - Docker containerization (optional)
 
-### Phase 5: Production
-- Monitoring & metrics dashboard
-- Model versioning & rollback
-- UI polish with loading indicators
-- Deployment guides & troubleshooting
-
 ## Dataset Information
 
 **Training Data**: `converted_long_dataset_with_category_mapped.csv`
@@ -317,11 +276,6 @@ Solution: Falls back to "MISC" category automatically
 - Categories: Business/Economics, Health, Science, Tech, and more
 - Scores: Human ratings (0-10)
 
-**Engineered Features**: `features_dataset.parquet`
-- Format: Apache Parquet (efficient, preserves types)
-- Contains: All 10+ computed features
-- Usage: Model training
-
 ##  Model Files
 
 Pre-trained models included:
@@ -329,20 +283,6 @@ Pre-trained models included:
 - `model_meta.joblib` - Feature metadata & training info
 - `category_predictor.pkl` - Category classification model
 
-##  Support & Contributions
 
-For issues or improvements:
-1. Check `TROUBLESHOOTING.md`
-2. Review relevant documentation in `docs/`
-3. Run tests to verify functionality
-4. Open issue with error logs from `logs/` directory
-
-##  License
-
-This project is provided as-is for academic and production use.
 
 ---
-
-**Version**: 2.0 (A+ Grade Edition)  
-**Last Updated**: May 2026  
-**Status**: Production Ready 
