@@ -2,7 +2,7 @@
 
 A production-ready, interpretable machine learning system for ranking Large Language Model (LLM) outputs based on answer quality. Uses LightGBM regression with 10+ engineered features to predict human satisfaction scores and provide explainable predictions.
 
-## 🎯 Features
+## Features
 
 - **Intelligent Ranking**: LightGBM model predicts quality scores (0-10) for LLM answers
 - **10+ Features**: Semantic alignment, readability, ROUGE-L, uniqueness, embeddings, etc.
@@ -13,7 +13,7 @@ A production-ready, interpretable machine learning system for ranking Large Lang
 - **Production Ready**: Modular code, comprehensive logging, error handling
 - **Documented**: Full API reference, architecture guide, ablation study
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 LLM_RANKING_SYSTEM/
@@ -47,7 +47,7 @@ LLM_RANKING_SYSTEM/
 └── docs/                      # Documentation (architecture, API, ablation study)
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -92,7 +92,7 @@ http://localhost:7860
    - Click Evaluate
    - View rankings, explanations, and auto-redirect to best model
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Python API
 
@@ -198,7 +198,7 @@ print(f"Categories: {stats['unique_categories']}")
 print(f"Models: {stats['unique_models']}")
 ```
 
-## 🧪 Testing
+##  Testing
 
 Run test suite:
 
@@ -213,7 +213,7 @@ pytest tests/ --cov=src --cov-report=html
 pytest tests/test_features.py::test_cosine_similarity -v
 ```
 
-## 📝 API Reference
+##  API Reference
 
 ### Core Modules
 
@@ -277,9 +277,9 @@ Solution: Falls back to "MISC" category automatically
 - `notebooks/Model_Analysis.ipynb` - Performance, SHAP, calibration
 - `notebooks/Final_UI.ipynb` - Interactive Gradio interface
 
-## 🏆 Project Highlights
+##  Project Highlights
 
-### Phase 1: Foundation ✅
+### Phase 1: Foundation 
 - Modular architecture (5 core modules)
 - Configuration management (YAML + env vars)
 - Data validation (Pydantic schemas)
@@ -309,7 +309,7 @@ Solution: Falls back to "MISC" category automatically
 - UI polish with loading indicators
 - Deployment guides & troubleshooting
 
-## 📊 Dataset Information
+## Dataset Information
 
 **Training Data**: `converted_long_dataset_with_category_mapped.csv`
 - Format: Long (one row per prompt-model-answer triplet)
@@ -322,14 +322,14 @@ Solution: Falls back to "MISC" category automatically
 - Contains: All 10+ computed features
 - Usage: Model training
 
-## 🔐 Model Files
+##  Model Files
 
 Pre-trained models included:
 - `lgbm_ranking_model.joblib` - Main ranking model
 - `model_meta.joblib` - Feature metadata & training info
 - `category_predictor.pkl` - Category classification model
 
-## 📞 Support & Contributions
+##  Support & Contributions
 
 For issues or improvements:
 1. Check `TROUBLESHOOTING.md`
@@ -337,7 +337,7 @@ For issues or improvements:
 3. Run tests to verify functionality
 4. Open issue with error logs from `logs/` directory
 
-## 📄 License
+##  License
 
 This project is provided as-is for academic and production use.
 
@@ -345,4 +345,4 @@ This project is provided as-is for academic and production use.
 
 **Version**: 2.0 (A+ Grade Edition)  
 **Last Updated**: May 2026  
-**Status**: Production Ready ✅
+**Status**: Production Ready 
