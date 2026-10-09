@@ -1,0 +1,50 @@
+# LLM Ranking System - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core data processing
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+
+# Machine Learning Model
+lightgbm>=3.3.0
+joblib>=1.2.0
+
+# Text & NLP
+sentence-transformers>=2.2.0
+rouge-score>=0.1.1
+textstat>=0.7.0
+
+# Web UI
+gradio>=3.40.0
+
+# Configuration
+pydantic>=1.10.0
+PyYAML>=6.0
+
+# Logging (optional but recommended)
+structlog>=22.3.0
+loguru>=0.7.0
+
+# Hyperparameter tuning (Phase 3)
+optuna>=3.0.0
+
+# Explainability (Phase 3)
+shap>=0.41.0
+
+# Development & Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.991
+
+# Additional utilities
+python-dotenv>=0.20.0
+tqdm>=4.64.0
+
+# Optional: Docker/Deployment
+# docker>=6.0.0
+# fastapi>=0.95.0
+# uvicorn>=0.20.0
+# python-multipart>=0.0.5
